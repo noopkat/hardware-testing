@@ -2,6 +2,6 @@
 
 A talk about javascript hardware testing
 
-[View the slideshow](http://noopkat.github.io/orig-pres)
+[View the slideshow](http://noopkat.github.io/testing-hardware)
 
 ![screenshot of slide](img/th/slideshot.png)
