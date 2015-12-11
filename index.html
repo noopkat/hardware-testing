@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>travis won't accept my packages / suz hinton</title>
+
+  <!--<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>-->
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
+  <link rel="stylesheet" media="screen" href="themes/style/mnml.css">
+  <link rel="stylesheet" media="screen" href="themes/style/noopkat.css">
+<!--   <link rel="stylesheet" media="screen" href="extensions/highlighter/shi_vim.min.css"> -->
+  <link rel="stylesheet" media="screen" href="extensions/highlightjs/default.min.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/fade.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide coverslide">
+      <h1>travis won't accept my packages<br/>
+      <span>- @noopkat -</span></h1>
+    </section>
+
+    <section class="slide">
+      <h2>why are we here</h2>
+      <ul>
+        <li><h3>automated testing </h3></li>
+        <li><h3>hardware</h3></li>
+        <li><h3>&heart;</h3></li>
+      </ul>
+    </section>
+
+    <section class="slide greyout drop">
+      <h2>suz hinton</h2>
+      <ol>
+        <li><h3>@noopkat</h3></li>
+        <li><h3>NYC</h3></li>
+        <li><h3>front-end dev @ kickstarter</h3></li>
+      </ol>
+      <img class="fullimage superfade" src="img/nyc.jpg" alt="photo of NYC cityscape" />
+    </section>
+
+    <section class="slide whiteout">
+      <h2>&nbsp; </h2>
+      <img class="fullimage" src="img/meowshoes.jpg" alt="shoes decorated to look like cats, connected with a wire" />
+    </section>
+
+    <section class="slide whiteout">
+      <img src="img/purr01.jpg" alt="chunky black plastic bracelet worn on posed wrist, with 2 red 8-bit style hearts embossed on top of bracelet" />
+      <img src="img/purr02.jpg" alt="iPhone on table with text messages of kitten pictures displaying" />
+    </section>
+
+    <section class="slide whiteout">
+      <h2>&nbsp; </h2>
+      <img class="fullimage" src="img/pyoa01.JPG" alt="raspberry pi computer running off a battery and connected to a thermal printer" />
+    </section>
+
+    <section class="slide whiteout">
+      <h2>&nbsp; </h2>
+      <img class="fullimage" src="img/pyoa02.JPG" alt="thermal printed roll of paper with images and text on it" />
+    </section>
+
+    <section class="slide whiteout">
+      <img class="fullimage" src="img/oledjs.png" alt="oled screen on a breadboard, displaying a pixelated monchrome picture of a cat's face" />
+    </section> 
+
+    <section class="slide whiteout">
+      <img class="fullimage" src="img/th/oled-jsPR.png" alt="github screenshot of some pull requests" />
+    </section> 
+
+    <section class="slide">
+      <h1>testing hardware libraries</h1>
+    </section>
+
+    <section class="slide">
+      <h1>unit tests are often not enough</h1>
+    </section>
+
+    <section class="slide">
+      <h1>vigilant integration testing is necessary</h1>
+    </section>
+
+    <section class="slide">
+      <h1>why not just write a sim?</h1>
+    </section>
+
+    <section class="slide">
+      <h2>why not just write a sim?</h2>
+      <ul>
+        <li><h3>pixel buffer emulation</h3></li>
+        <li><h3>clock speed emulation</h3></li>
+        <li><h3>I2C response emulation</h3></li>
+        <li><h3>busy/read state emulation</h3></li>
+        <li><h3>multiplexer emulation</h3></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>it would be too 'perfect'</h1>
+    </section>
+
+    <section class="slide">
+      <h1>A LOT OF WORK</h1>
+    </section>
+
+    <section class="slide">
+      <img class="" style="width: 1200px; " src="img/th/oled-screens.svg" alt="github screenshot of a pull request" />
+    </section>
+
+    <section class="slide">
+      <h1><b>physical</b> integration testing</h1>
+    </section>
+
+    <section class="slide">
+      <img class="" style="width: 500px; padding-top: 10%" src="img/th/travis.gif" alt="travis ci logo" />
+    </section>
+
+<!--     <section class="slide">
+      <img class="" src="img/th/ci.svg" alt="diagram of continuous integration flow. Different steps arrange around a ring." />
+    </section> -->
+
+    <section class="slide">
+      <img class="fullimage" src="img/th/coolpr.png" alt="github screenshot of a pull request" />
+    </section>
+
+    <section class="slide">
+     <img class="fullimage" src="img/travis.svg" alt="travis ci logo, with a mail parcel to the right" />
+    </section>
+
+    <section class="slide">
+      <h1>so I tried rolling my own in javascript</h1>
+    </section>
+
+    <section class="slide">
+      <h1>here is how I did it</h1>
+    </section>
+
+    <section class="slide">
+      <img class="fullimage" src="img/th/test-server.svg" alt="diagram of github octokitty and server communicating via webhooks and api calls" />
+    </section>
+
+    <section class="slide">
+      <img class="fullimage" src="img/th/test-server2.svg" alt="diagram of server fetching, building, demoing, taking photos, compositing, commenting on the PR." />
+    </section>
+
+    <section class="slide">
+      <img class="" style="width: 1000px;" src="img/th/rig.JPG" alt="picture of breadboard circuit with three oled screens, and Arduino Nano and a multiplexer breakout" />
+    </section>
+
+    <section class="slide">
+      <img class="" style="width: 1200px;"  src="img/th/orig-tinkercad.gif" alt="picture of a raspberry pi 2" />
+    </section>
+
+    <section class="slide">
+      <img class="" style="width: 1000px;" src="img/th/3dprintrig.JPG" alt="picture of a 3d printed tray for a breadboard, with ball and socket joint arm with webcam attached" />
+    </section>
+
+   <section class="slide">
+      <img class="fullimage" src="img/th/rasppi.jpg" alt="picture of a raspberry pi 2" />
+    </section>
+
+    <section class="slide">
+      <h2>npm modules</h2>
+      <ul>
+        <li><h3>rvagg / github-webhook-handler</h3></li>
+        <li><h3>steveukx / simple-git</h3></li>
+        <li><h3>kaimallea / node-imgur</h3></li>
+        <li><h3>rwaldron / johnny-five</h3></li>
+        <li><h3>noopkat / oledjs</h3></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>misc software</h2>
+      <ul>
+        <li><h3>fswebcam</h3></li>
+        <li><h3>graphics magick</h3></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>...</h1>
+    </section>
+
+    <section class="slide">
+      <h1>did it work?</h1>
+    </section>
+
+    <section class="slide">
+      <h1>next steps</h1>
+    </section>
+
+    <section class="slide">
+      <h2>next steps</h2>
+      <ul>
+        <li><h3>clean up code</h3></li>
+        <li><h3>documentation</h3></li>
+        <li><h3>pixel diffing / analysis</h3></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h1>do a thing</h1>
+    </section>
+
+    <section class="slide">
+      <h1>it's ok to be niche</h1>
+    </section>
+
+    <section class="slide">
+      <h1>success is different for everyone</h1>
+    </section>
+
+    <section class="slide">
+      <h1>fall in love with testing</h1>
+    </section>
+
+    <!-- FIN -->
+    <section class="slide blackout">
+      <h1 style="font-size: 3.2em"><pre>&gt; console.log('thank you');
+      </pre></h1>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<!-- <script src="extensions/status/deck.status.js"></script> -->
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+<script src="extensions/iframe/deck.iframes.js"></script>
+<!-- <script src="extensions/highlighter/shi_jquery.min.js"></script> -->
+<script src="extensions/highlightjs/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+  $(function() {
+    // start slides
+    $.deck('.slide');
+
+    function fixZoom() {
+      var newZoom = 1;
+      if (window.innerWidth < 1050) {
+        newZoom = 0.5;
+      } else if (window.innerWidth < 1300) {
+        newZoom = 0.8;
+      }
+      document.body.style.zoom = newZoom;
+    }
+
+    // fix zoom if window size is fiddled with
+    window.addEventListener('resize', fixZoom);
+
+    // fix zoom on page load
+    $(document).ready(function() {
+      fixZoom();
+    });
+  });
+</script>
+</body>
+</html>
